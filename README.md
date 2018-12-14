@@ -50,10 +50,12 @@ const descriptions = textBoxes.map($.getAttribute("data-description"))
 
 // modifies the `style` property of each element
 
-textBoxes.forEach($.addCss({
-    color: "blue",
-    background-color: "yellow",
-}))
+textBoxes.forEach(
+    $.addCss({
+        color: "blue",
+        backgroundColor: "yellow"
+    })
+)
 ```
 
 # Full Function List
