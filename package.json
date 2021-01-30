@@ -1,8 +1,9 @@
 {
   "name": "thinquery",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and functional DOM querying library",
   "main": "dist/index.js",
+  "type": "module",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
