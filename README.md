@@ -1,6 +1,6 @@
 # ThinQuery
 
-![npm](https://img.shields.io/npm/v/thinquery)
+[![thinquery on npm](https://img.shields.io/npm/v/thinquery)](https://www.npmjs.com/package/thinquery)
 
 ThinQuery (TQ) is an extremely lightweight Javascript library to make simple queries
 of the DOM easier to write. It also includes some curried convenience functions
