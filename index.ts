@@ -36,6 +36,12 @@ export class ThinQuery {
     getAttribute = (name: string) => (element: Element) => {
         return element.getAttribute(name);
     };
+    
+    setText = (value: string) => (element: Node) => {
+        element.textContent = value;
+    };
+    
+    getText = (element: Node) => element.textContent;
 
     setValue = (value: string) => (element: HTMLInputElement) => {
         element.value = value;
