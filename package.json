@@ -1,0 +1,23 @@
+{
+  "name": "thinquery",
+  "version": "1.0.0",
+  "description": "Simple and functional DOM querying library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThatsNoMoon/thinquery.git"
+  },
+  "author": "ThatsNoMoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThatsNoMoon/thinquery/issues"
+  },
+  "homepage": "https://github.com/ThatsNoMoon/thinquery#readme",
+  "dependencies": {
+    "typescript": "^4.1.3"
+  }
+}
