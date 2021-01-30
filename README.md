@@ -1,5 +1,7 @@
 # ThinQuery
 
+![npm](https://img.shields.io/npm/v/thinquery)
+
 ThinQuery (TQ) is an extremely lightweight Javascript library to make simple queries
 of the DOM easier to write. It also includes some curried convenience functions
 to make applying a change over many elements simpler.
@@ -20,18 +22,20 @@ The following examples refer to this document:
 
 ```html
 <div id="box">
-    <span class="text-box first" data-description="a description"
-        >Text box content</span
-    >
-    <span class="text-box second" data-description="more descriptiveness"
-        >Another text box content</span
-    >
+    <span class="text-box first" data-description="a description">
+        Text box content
+    </span>
+    <span class="text-box second" data-description="more descriptiveness">
+        Another text box content
+    </span>
 </div>
 ```
 
 ```javascript
+import { ThinQuery } from 'thinquery';
+
 // Get ThinQuery context
-const $ = thinQuery(document)
+const $ = new ThinQuery(document)
 
 // getElementById
 const box = $.id("box")
@@ -78,6 +82,9 @@ $.selectAll(selector)
 // adds the class to the element. Best used in higher-order functions like forEach
 $.addClass(className)(element)
 
+// removes the class from the element. Best used in higher-order functions like forEach
+$.removeClass(className)(element)
+
 // adds the CSS to the element, using an object. Keys are CSS style property
 // names, values are the corresponding values. Best used in higher-order functions
 // like forEach
@@ -105,8 +112,4 @@ $.setValue(val)(element)
 // gets the `value`attribute of the element. Best used in higher-order functions like
 // map
 $.setValue(element)
-
-// removes the element from its parent. Best used in higher-order functions like
-// forEach
-$.remove(element)
 ```
