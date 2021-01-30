@@ -111,5 +111,5 @@ $.setValue(val)(element)
 
 // gets the `value`attribute of the element. Best used in higher-order functions like
 // map
-$.setValue(element)
+$.getValue(element)
 ```
